@@ -2,3 +2,5 @@
 2. Copy files from last week's CSS exercise in your team's forlder.
 3. Add interactivity using JavaScript and jQuery.
 4. Send pull request to upload your code on GitHub
+
+Another change...
