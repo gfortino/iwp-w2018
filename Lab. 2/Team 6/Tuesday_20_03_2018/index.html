@@ -1,0 +1,46 @@
+<html>
+ <head>
+  <title>JS TEST</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+  function textCounter(field){
+   document.getElementById("count").innerHTML = field.length;
+  }
+  function switch_div(show) {
+    document.getElementById("show_"+show).style.display = "block";
+    document.getElementById("show_"+((show==1)?2:1)).style.display = "none";
+  }
+  </script>
+</head>
+
+  <body>
+
+    <div>
+      <img src="img/1.jpg" onmouseover="this.src=this.src.replace('img/1.jpg','img/2.jpg')" onmouseout="this.src=this.src.replace('2.jpg','1.jpg')"  alt="img"></img>
+    </div>
+    <div>
+      <input onchange="textCounter(this.value)"></input>
+      <p id="count"></p>
+
+
+
+    </div>
+
+    <div>
+      <button class="button" onclick="switch_div(1);">
+        1
+      </button>
+      <button class="button" onclick="switch_div(2);">
+        2
+      </button>
+
+      <div class="content" style="color:#990000" id="show_1">
+        I'm inteligent
+      </div>
+      <div class="content hide"style="color:#0033cc" id="show_2">
+       Too easy for me
+      </div>
+    </div>
+
+
+</html>
