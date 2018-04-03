@@ -3,10 +3,27 @@
 
 2. Create concrete classes derived from Vehicle
 	a. Car
+		Make
+		Model
+		Year
+		Type
 	b. Plane
+		Model
+		NbEngines
+		NbPassengers
+		MaxAltittude
 	c. Boat
 
-3. Create interfaces
+3. Create interfaces with the following methods:
 	a. FlyingMachine
+		TakeOff();
+		Land();
+		StartEngine($engineNumber);
+		SetThrottle();
 	b. RoadCapable
+		StartEngine();
+		Accelerate();
+		Brake();
 	c. Floating
+		LiftAnchor();
+		DropAnchoer();
