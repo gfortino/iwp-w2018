@@ -1,0 +1,29 @@
+1. Create a Vehicle abstract class
+	a. For implementation of GetType() method (returns the actual type: car, plane, boat)
+
+2. Create concrete classes derived from Vehicle
+	a. Car
+		Make
+		Model
+		Year
+		Type
+	b. Plane
+		Model
+		NbEngines
+		NbPassengers
+		MaxAltittude
+	c. Boat
+
+3. Create interfaces with the following methods:
+	a. FlyingMachine
+		TakeOff();
+		Land();
+		StartEngine($engineNumber);
+		SetThrottle();
+	b. RoadCapable
+		StartEngine();
+		Accelerate();
+		Brake();
+	c. Floating
+		LiftAnchor();
+		DropAnchoer();

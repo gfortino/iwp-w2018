@@ -1,5 +1,4 @@
 <?php
-
 // Find regular expression online to match any e-mail address.
 $exp = "/^[\w.-]+@[\w.-]+\.[a-z]{2,6}$/";
 // Use it to validate an array of 5 strings.
