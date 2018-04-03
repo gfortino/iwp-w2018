@@ -14,14 +14,34 @@ class Car extends Vehicule{
 }
 
 class Plane extends Vehicule implements FlyingMachine{
+	var $Model;
+	var $NbEngines;
+	var $NbPassengers;
+	var $MaxAltittude;
+	public function __construct($model, $nbEngines, $nbPassengers, $maxAltittude){
+		$this->Model = $model;
+		$this->NbEngines = $nbEngines;
+		$this->NbPassengers = $nbPassengers;
+		$this->MaxAltittude = $maxAltittude;
+		echo ("Creation of the plane ".$this->Model.PHP_EOL);
+	}
+	public function __destruct(){
+		echo ("Destruction of the plane ".$this->Model.PHP_EOL);
+	}
 	public function getType(){
-		echo ("I'm a plane");
+		echo ("I'm a Plane");
 	}
-	public function fly(){
-		echo ("I'm flying");
+	public function TakeOff(){
+		echo ("All engines off".PHP_EOL);
 	}
-	public function landing(){
-		echo ("I'm landing");
+	public function Land(){
+		echo ("Landing".PHP_EOL);
+	}
+	public function StartEngine($engineNumber){
+		echo ("Engine $engineNumber on".PHP_EOL);
+	}
+	public function SetThrottle(){
+		echo ("??".PHP_EOL);
 	}
 }
 
@@ -32,8 +52,10 @@ class Boat extends Vehicule{
 }
 
 interface FlyingMachine{
-	public function fly();
-	public function landing();
+	public function TakeOff();
+	public function Land();
+	public function StartEngine($engineNumber);
+	public function SetThrottle();
 }
 
 interface RoadCapable{
@@ -44,6 +66,9 @@ interface RoadCapable{
 interface Floating{
 	
 }
+
+$plane = new Plane("BOEING",2,200,2000);
+$plane->StartEngine(1);
 
 
 
