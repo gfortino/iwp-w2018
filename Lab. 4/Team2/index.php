@@ -26,8 +26,22 @@ class Plane extends Vehicule implements FlyingMachine{
 }
 
 class Boat extends Vehicule{
+	public function __construct(){
+		echo("Mading the boat...");
+	}
+	public function __destruct(){
+			echo("Destructing the boat...");
+	}
+		echo("Mading the boat...");
+	}
 	public function getType(){
 		echo ("I'm a boat");
+	}
+	public function LiftAnchor(){
+		echo("Anchor is lifted")
+	}
+	public function DropAnchor(){
+		echo("Anchor is dropped")
 	}
 }
 
@@ -42,7 +56,8 @@ interface RoadCapable{
 }
 
 interface Floating{
-	
+	public function LiftAnchor();
+	public function DropAnchoer();
 }
 
 
