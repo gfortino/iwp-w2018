@@ -7,9 +7,31 @@ abstract class Vehicule{
 	public abstract function getType();
 }
 
-class Car extends Vehicule{
-	public function getType(){
-		echo ("I'm a car");
+class Car extends Vehicule implements RoadCapable{
+	var $make;
+	var $model;
+	var $year;
+	var $type;
+	
+	public function __construct($make, $model, $year, $type){  
+		$this->make = $make;  
+		$this->model = $model; 
+		$this->year = $year; 
+		$this->type = $type; 
+	}
+	
+	public function __destruct(){
+		//$this->connection->destroy();
+		echo("Destroy");
+	}
+	public function StartEngine(){
+		echo ("Start to drive");
+	}
+	public function Accelerate(){
+		echo ("Accelerate");
+	}
+	public function Brake(){
+		echo ("Brake");
 	}
 }
 
@@ -51,8 +73,9 @@ interface FlyingMachine{
 }
 
 interface RoadCapable{
-	public function moveForward();
-	public function park();
+	public function StartEngine();
+	public function Accelerate();
+	public function Brake();
 }
 
 interface Floating{
