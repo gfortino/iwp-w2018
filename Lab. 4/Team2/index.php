@@ -8,10 +8,10 @@ abstract class Vehicule{
 }
 
 class Car extends Vehicule implements RoadCapable{
-	var make;
-	var model;
-	var year;
-	var type;
+	var $make;
+	var $model;
+	var $year;
+	var $type;
 	
 	public function __construct($make, $model, $year, $type){  
 		$this->make = $make;  
