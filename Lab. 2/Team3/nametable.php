@@ -1,4 +1,4 @@
-<html>
+<img src="chaise.png" alt="" /><html>
 	<head>
 		<title>Name Table.</title>
 		<link rel = "stylesheet" href = "bckgrnt.css">
