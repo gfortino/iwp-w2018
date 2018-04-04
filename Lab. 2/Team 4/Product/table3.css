@@ -1,0 +1,40 @@
+div.desc
+{
+    clear : both;
+    width : 500px;
+    position : relative;
+    top : 40px;
+}
+
+div.title
+{
+    display : inline;
+    position : absolute;
+    left : 230px;
+    top : 45px;
+}
+
+div.butto
+{
+    position : relative;
+    top : 50px;
+}
+
+div.img
+{
+    position :relative;
+    top : 40px;
+}
+
+div.head
+{
+    position : absolute;
+    top : 20px;
+    left : 44px;
+}
+
+div.comment
+{
+    position : relative;
+    top : 50px;
+}
