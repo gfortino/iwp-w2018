@@ -12,9 +12,11 @@
         Description
 3. Add interactivity using JavaScript:
     3.1 Change an image with onmouseover and onmouseout
-    3.2 Count characters in a text input with onchange
+    3.2 Count characters in a text inputtext input with onchange
     3.3 Show/hide a paragraph of text with onclick (2 buttons)
 4. Send pull request to upload your code on GitHub
 
 Adding a footer here.
 Test.
+
+
