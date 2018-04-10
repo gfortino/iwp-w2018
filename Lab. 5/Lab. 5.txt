@@ -1,0 +1,12 @@
+Create a login/signup form.
+
+If the user not logged in, the login form is displayed (username and password).
+
+A link leads users to a signup page, where they can create an account.
+Don't forget to confirm the password.
+Store user in database, making sure the password is encoded (e.g. MD5 hash).
+Each user should have a unique identifier (see AUTO_INCREMENT in MySQL).
+
+From the login form, the user can login using username password.
+Display welcome message upon login along with logout button.
+Logging out should return to login form.
