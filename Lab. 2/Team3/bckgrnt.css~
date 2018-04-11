@@ -1,0 +1,14 @@
+body{
+	background-color : #C79;
+	color : white;
+	margin : .2em .2em;
+	font-family : Verdana;
+}
+.paire{
+	background-color : #DDD;
+	color : black;
+}
+.impaire{
+	background-color : #38B;
+	color : black;
+}

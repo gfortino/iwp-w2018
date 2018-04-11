@@ -1,0 +1,22 @@
+1. Create a fork from this project and add a folder for your team under Lab. 2
+2. Copy files from last week's CSS exercise in your team's forlder.
+    2.1 Table of alternating rows
+        #
+        Last Name
+        First Name
+        Email
+    2.2 Product file
+                Title
+        Image   Price
+                Quantity available
+        Description
+3. Add interactivity using JavaScript:
+    3.1 Change an image with onmouseover and onmouseout
+    3.2 Count characters in a text inputtext input with onchange
+    3.3 Show/hide a paragraph of text with onclick (2 buttons)
+4. Send pull request to upload your code on GitHub
+
+Adding a footer here.
+Test.
+
+

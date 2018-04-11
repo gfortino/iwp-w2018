@@ -1,0 +1,17 @@
+<?php
+
+// Find regular expression online to match any e-mail address.
+// Use it to validate an array of 5 strings.
+// Make 3 of these 5 strings invalid email adresses (e.g. missing TLD, missing @, illegal characters, etc...)
+
+	$email = array("tom.luc@live.fr", "marc-G@lol.com", "jean.dupond.com", "marie-jul@com"); ; // test avec une chaine qui est une adresse email
+ 
+
+	foreach($email as $one) {
+		if (preg_match('#^[\w.-]+@[a-z]{2,6}+\.[a-z]{2,6}$#', $one)) {
+   				echo ("Email : {$one} matches<br/>");
+		} else {
+    			echo ("Email : {$one} doesn't match<br/>");	
+		}
+	}
+?>
