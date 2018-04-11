@@ -1,0 +1,15 @@
+Create an interactive web page with two sections:
+
+	1) a control form
+	2) an empty <div> tag
+
+Using JavaScript and/or jQuery, use the control form to change the DIV's:
+
+	- border (visible/invisible, thickness in pixels, color)
+	- background color
+	- text color
+	- text size
+	- actual text (content)
+	- height and width
+
+Bonus: make the height and width transitions animated!	
