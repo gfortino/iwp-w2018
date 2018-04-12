@@ -1,5 +1,5 @@
 # Project Presentations &mdash; Thursday, April 17<sup>th</sup>, 2018
-Concordia University - Introduction to Web Programming - Winter 2018
+<center>Concordia University - Introduction to Web Programming - Winter 2018</center>
 <p><strong>09:00 Team 2</strong> &mdash; Alexis, Julien, Antoine<br><h4>Questions: </h4><ol><li>Zhongxiong</li><li>Hugo</li><li>Mathis</li></ol></p>
 <hr>
 <p><strong>09:25 Team 6</strong> &mdash; François, Ines, Tom<br><h4>Questions: </h4><ol><li>Antoine</li><li>Jean</li><li>Clément</li></ol></p>
