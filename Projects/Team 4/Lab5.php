@@ -38,10 +38,10 @@
 				<?php 
 				function insert()
 				{
-				$db->query('INSERT INTO lab5 ("EMail","Password","Username") VALUES ('''.
-				$_POST["mail"].','.
-				$_POST["password"].','.
-				$_POST["userName"].')');
+				$db->query('INSERT INTO lab5 ("EMail","Password","Username") VALUES (\''.
+				$_POST["mail"].'\',\''.
+				$_POST["password"].'\',\''.
+				$_POST["userName"].'\')');
 				}
 				?>
 				<input type ="button" value=" Inscription" onclick ="insert();">
