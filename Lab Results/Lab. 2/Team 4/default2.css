@@ -1,0 +1,18 @@
+body {
+    background-color: #FFF;
+    color: black;
+    font-family: Arial;
+    font-size: 1.1em;
+    margin: 0em .3em; 
+}
+
+.quarter{
+    background-color: skyblue;
+    border : 2px solid deepskyblue;
+}
+
+.color{
+    background-color: aquamarine;
+    border : 2px solid deepskyblue;
+}
+

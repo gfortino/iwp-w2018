@@ -1,0 +1,23 @@
+table{
+    border: 1px solid deepskyblue;
+    width: 50%;
+    border-collapse: collapse;
+}
+
+td{
+    border : 2px solid deepskyblue;
+    text-align: center;
+}
+
+tbody{
+    border: inherit;
+    text-align: center;
+}
+
+tr{
+    border: 2px solid deepskyblue;
+}
+
+th{
+    border : 2px solid deepskyblue;
+}
