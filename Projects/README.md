@@ -12,4 +12,4 @@
 <hr>
 <p><strong>11:05 Team 1</strong> &mdash; Adrien, Zherui, Zhongxiong<br><h4>Questions: </h4><ol><li>Nathalie</li><li>Rowan</li><li>Romain</li></ol></p>
 <hr>
-<p><strong>11:30 Team 5</strong> &mdash; Romain, Hugo<br><h4>Questions: </h4><ol><li>Nathalie</li><li>Rowan</li><li>Romain</li></ol></p>
+<p><strong>11:30 Team 5</strong> &mdash; Romain, Hugo<br><h4>Questions: </h4><ol><li>Alexis</li><li>Tristan</li></ol></p>
