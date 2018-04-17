@@ -33,6 +33,10 @@ class Car extends Vehicule implements RoadCapable{
 	public function Brake(){
 		echo ("Brake");
 	}
+
+	public function getType(){
+		echo("getType");
+	}
 }
 
 class Plane extends Vehicule implements FlyingMachine{
@@ -72,18 +76,17 @@ class Boat extends Vehicule{
 		echo("Mading the boat...");
 	}
 	public function __destruct(){
-			echo("Destructing the boat...");
-	}
+		echo("Destructing the boat...");
 		echo("Mading the boat...");
 	}
 	public function getType(){
 		echo ("I'm a boat");
 	}
 	public function LiftAnchor(){
-		echo("Anchor is lifted")
+		echo("Anchor is lifted");
 	}
 	public function DropAnchor(){
-		echo("Anchor is dropped")
+		echo("Anchor is dropped");
 	}
 }
 
