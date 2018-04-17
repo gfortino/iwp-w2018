@@ -1,0 +1,296 @@
+<?php
+/**
+ *created par Zherui
+ */
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+$lang['user']='user';
+$lang['password']='password';
+$lang['admin']='admin';
+$lang['list']='list';
+$lang['change']='Change';
+$lang['product']='Product';
+$lang['development_product']='Dvlp product';
+$lang['add_new_product'] = 'Add product';
+$lang['upload_excel']='Upload Excel';
+$lang['export_excel']='Export Excel';
+$lang['add_new_dvlp_product'] = 'Add develope product';
+$lang['show_products'] = 'Products';
+$lang['show_dvlp_products'] = 'Develope products';
+$lang['search'] = 'Search';
+$lang['num_ref'] = 'ref number';
+$lang['photo'] = 'Photo';
+$lang['rowid']='rowid';
+$lang['ref'] = 'Ref';
+$lang['type'] = 'type'; //实际上是label
+$lang['label'] = 'Label';
+$lang['description'] = 'Description';
+$lang['price'] = 'Selling price';
+$lang['price_ttc']='Price(with tva_tx)';
+$lang['price_min']='Price minimum';
+$lang['price_min_ttc']='Price minimum (with tva tx)';
+$lang['seuil_stock_alerte']='Seuil stock alerte';
+$lang['desired_stock']='Desired stock';
+$lang['note'] = 'Note';
+$lang['weight'] = 'Weight';
+$lang['volume'] = 'Volume';
+$lang['edit'] = 'Edit';
+$lang['delete']='delete';
+$lang['delete_confirm']='Delete Comfirm';
+$lang['r_u_sure_to_delete']='Are you sure to delete ?';
+$lang['back'] = 'Back';
+$lang['home'] = 'Home';
+$lang['back_to_home']='BACK TO HOME';
+$lang['create']='create';
+$lang['upload'] = 'Upload';
+$lang['choose_upoad_format']='please choose upoad format';
+$lang['base_format']='base format';
+$lang['complex_format']='complex format';
+$lang['info_product'] = 'Info_Product';
+$lang['yes']='Yes';
+$lang['si']='Yes';
+$lang['no']='No';
+$lang['cancel']='Cancel';
+$lang['edit_photo']='Edit Photo';
+$lang['done']='Done';
+$lang['login']='Login';
+$lang['logout']='Logout';
+$lang['lote']='Lote';
+$lang['pack']='Pack';
+$lang['undscaja']='Undscaja';
+$lang['categorie']='Categorie';
+$lang['sub_categorie']='sub_categorie';
+$lang['big_categorie']='big_categorie';
+$lang['brand']='Brand';
+$lang['add_new_brand_here']='Add new brand here';
+$lang['barcode_type']='barcode type';
+$lang['barcode']='Barcode';
+$lang['nivel']='Nivel';
+$lang['categ_selected']='categ_selected(click to delete)';
+$lang['add_categ']='add Categorie';
+$lang['add_sub_categ']='add_sub_categ';
+$lang['big_categorie_only']='can only edit big categorie';
+$lang['unds_caja_grande']='Unds caja grande';
+$lang['coste_embalaje_del_producto']='Coste Embalaje del Producto';
+$lang['cost_price']='Desired buying price';
+$lang['source_country']='Source country';
+$lang['info_fournisseur']='Info fournisseur';
+$lang['fournisseur']='Fournisseur';
+$lang['suppliers_product_ref']='Supplier \'s product ref.';
+$lang['suppliers_price']='Supplier\'s price';
+$lang['relative']='relative';
+$lang['absolute']='absolute';
+$lang['discount']='Discount';
+$lang['reputation']='reputation';
+$lang['buying_price']='buying price';
+$lang['tva_tx']='VAT Rate (for this supplier/product)';
+$lang['delivery_time_days']='Delivery delay in days';
+$lang['minimum_qty']='minimum_qty';
+$lang['add']='add';
+$lang['detail_pack']='pack detail';
+$lang['detail_box']='box detail';
+$lang['ean_pack']='EAN PACK';
+$lang['ean_box']='EAN BOX';
+$lang['ean_big_box']='EAN BIG BOX';
+$lang['detail_big_box']='big box detail';
+$lang['Ref_SKU_BOX']='Ref. SKU BOX';
+$lang['long']='long';
+$lang['wide']='wide';
+$lang['hight']='hight';
+$lang['weight']='weight';
+$lang['extrafileds']='extrafileds'; ///////自定义属性
+$lang['function']='function';
+$lang['ingredient']='ingredient';
+$lang['caution']="caution";
+$lang['forma_de_presentacion']='Forma de presentación';
+$lang['material']='Material';
+$lang['coste_de_embalaje']='Coste de embalaje';
+$lang['color']='color';
+$lang['propiedad']='Propiedad';
+$lang['efecto']='Efecto';
+$lang['precaucion']='Precaution';
+$lang['modo_de_uso']='Modo de uso';
+$lang['precio_venta_competencia']='Precio venta de competencia';
+$lang['competencia']='Competencia';
+$lang['tipoacabado']='Tipo de Acabado ';
+$lang['multilingual']='Multilingual';
+$lang['extra_fileds']='Extra fileds';
+$lang['setting']='setting';
+
+
+
+
+
+//这里开始是供应商的信息
+$lang['show_societe']='show_societe';
+$lang['show_fournisseur']='Show supplier';
+$lang['societe']='Societe';
+$lang['supplier']='Supplier';
+$lang['add_new_fournisseur']='Add supplier';
+$lang['fournisseur_name']='supplier name';
+$lang['first_name']='名';
+$lang['last_name']='姓';
+$lang['cif']='CIF';
+$lang['name_alias']='alias';
+$lang['code_fournisseur']='code fournisseur';
+$lang['address']='address';
+$lang['address_comp']='company address';
+$lang['entrega_address']='Address entrega';
+$lang['zip']='zip';
+$lang['town']='town';
+$lang['departement']='departement';
+$lang['pays']='country';
+$lang['phone']='phone';
+$lang['fax']='fax';
+$lang['email']='email';
+$lang['skype']='skype';//可以用来记录微信
+$lang['civility']='civility';
+$lang['madame']='madame';
+$lang['monsieur']='monsieur';
+$lang['mademoiselle']='mademoiselle女士';
+$lang['master']='master';
+$lang['doctor']='doctor';
+$lang['poste']='poste';
+$lang['company_name']='company name';
+$lang['tva_assuj']='tva assuj';
+$lang['cif']='cif';
+$lang['bank_label']='bank label';
+$lang['bank_name']='bank name';
+$lang['bank_number']='Number';
+$lang['domiciliation']='domiciliation';
+$lang['bic']='BIC';
+$lang['iban']='IBAN';
+$lang['proprio']='proprio';
+$lang['info_societe']='info societe';
+$lang['address_personnelle']='personnal address';
+$lang['societe_liste']='societe list';
+$lang['fournisseur_liste']='supplier liste';
+$lang['main_categ']='Main_categ';
+$lang['main_product']='Main product';
+$lang['valoracion_del_precio']='valoracion del precio';
+$lang['clientela']='Cliente la';
+$lang['calidad']='calidad';
+$lang['fecha_entrega']='Fecha entrega';
+$lang['actividad']='Actividad';
+$lang['market']='Market';
+//经营属性
+$lang['TE_UNKNOWN']='';
+$lang['TE_WHOLE']='Whole';
+$lang['TE_RETAIL']='Revendeur';
+$lang['TE_PRIVATE']='Private';
+$lang['TE_FACTORY']='Factory';
+$lang['TE_TRADING']='Comercio';
+
+//客户信息
+$lang['societe_commerciaux']='societe commerciaux';
+$lang['add_new_client']='Add client';
+$lang['cond_reglement']='condition reglement';
+$lang['add_new_client']='add client';
+$lang['remise_client']='discount relative';
+$lang['info_client']='info client';
+$lang['client_liste']='client list';
+$lang['show_client']='Show client';
+$lang['customer']='customer';
+$lang['contact']='contact';
+$lang['fare']='discount';
+$lang['detail_client']='Detail client';
+$lang['areadeventa']='Aréa de venta';
+$lang['formatienda']='Forma de tienda';
+$lang['franchis']='Franchis';
+$lang['family']='Family';
+$lang['individual']='Individual';
+$lang['volumenventamensual']='Volumen de venta mensual';
+$lang['frecuenciacompra']='Frecuencia de compra';
+$lang['implortedecompras']='Importe de compras';
+$lang['pagopuntualidad']='Pago puntualidad';
+$lang['leatalddelcliente']='Lealtad del cliente';
+
+//联系人
+$lang['show_contact']='Show contact';
+$lang['info_contact']='Info contact';
+$lang['add_new_contact']='Add contact';
+$lang['phone_mobile']='mobile phone';
+$lang['contact_liste']='Contact liste';
+$lang['detail_contact']='Detail contact';
+$lang['work_time']='Tiempo que ha trabajado';
+$lang['economic']='Estado Economico';
+$lang['pay_cap']='Capacidad de pago';
+$lang['relation']='Relación con la empresa';
+$lang['taux_re']="taxu RE";
+
+
+//发票
+$lang['draft']='draft';
+$lang['closed']='closed';
+$lang['validated']='validated';
+$lang['list_facture']='List facture';
+$lang['create_facture']='Create facture';
+$lang['show_factures']='show_factures';
+$lang['date']='date';
+$lang['bank_account']='bank account';
+$lang['total_ttc']='total_ttc';
+$lang['csv']='.csv';
+$lang['mode_reglement_supplier']='mode_reglement_supplier';
+$lang['cheque']='cheque';
+$lang['carte_bancaire']='bank cart';
+$lang['vivrement']='vivrement';
+$lang['espece']='espece';
+$lang['cond_reglement_supplier']='payment term';
+$lang['RECEP']='Due to reception';
+$lang['30D']='30 days';
+$lang['30DENDMONTH']='30 days end month';
+$lang['60D']='60 days';
+$lang['60DENDMONTH']='60 days end month';
+$lang['PT_ORDER']='order';
+$lang['PT_DELIVERY']='delivery';
+$lang['PT_5050']='50-50';
+
+//commande
+$lang['commande']='Commande';
+$lang['info_commande']='info commande';
+$lang['quantity']='quantity';
+$lang['total']='total';
+$lang['third_party']='third party';
+$lang['zip_code']='Zip code';
+$lang['city']='City';
+$lang['date_commande']='Order date';
+$lang['date_livraison']='Planned date of delivery';
+$lang['remise_percent']="discount";
+$lang['total_tva']="Total tva";
+$lang['total_re']="Total RE";
+$lang['total_ht']='Amount (net of tax)';
+$lang['total_ttc']='Amount(include tax)';
+$lang['statut']='Statut';
+$lang['list_commande']='List commande';
+$lang['add_new_commande']='Add commande';
+$lang['ref_client']='ref client';
+$lang['client']='client';
+$lang['availability_delay']='Availability delay';
+$lang['source']='Source';
+$lang['shipping_method']='shipping method';
+$lang['note_public']='Note public';
+$lang['note_private']='Note private';
+$lang['manual_input']='manual input';
+$lang['scan']='scan';
+$lang['validate']='validate';
+//运输方式
+$lang['CATCH']='catch'; //catch by client
+$lang['TRANS']='Transporter'; //Generic transporter
+//来源
+$lang['SRC_INTE']='Web site';
+$lang['SRC_CAMP_MAIL']='Mailing campaign';
+$lang['SRC_CAMP_PHO']='Phone campaign';
+$lang['SRC_CAMP_FAX']='Fax campaign';
+$lang['SRC_COMM']='Commercial contact';
+$lang['SRC_SHOP']='Shop contact';
+$lang['SRC_CAMP_EMAIL']='EMailing campaign';
+$lang['SRC_WOM']='Word of mouth';
+$lang['SRC_PARTNER']='Partner';
+$lang['SRC_EMPLOYEE']='Employee';
+$lang['SRC_SPONSORING']='Sponsorship';
+
+//运输
+$lang['expedition']='shippement';
+$lang['create_date']='create date';
+
+

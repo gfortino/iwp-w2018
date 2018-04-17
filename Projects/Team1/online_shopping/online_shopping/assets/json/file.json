@@ -1,0 +1,8 @@
+[
+	{ "val": 1 , "text": "abc" },
+	{ "val": 2 , "text": "def" },
+	{ "val": 3 , "text": "thIS is a very long text" },
+	{ "val": 4 , "text": "this_is_a very_long_text" },
+	{ "val": 5 , "text": "test" },
+	{ "val": 6 , "text": "test2" }
+]

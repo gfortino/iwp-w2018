@@ -1,0 +1,13 @@
+/*created by zherui, a noob front end player*/
+.product_preview{
+    display:none;
+    /*width:300px;*/
+    /*height:100px;*/
+    z-index:99999 /*置于顶层*/
+    padding:10px;/*内边距*/
+    /*position:relative;*/
+    position: fixed;
+    top:0px;
+    left:50px;
+    /*background-color:white;*/
+}
