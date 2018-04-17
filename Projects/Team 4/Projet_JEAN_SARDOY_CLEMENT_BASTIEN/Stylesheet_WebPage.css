@@ -1,0 +1,131 @@
+@font-face
+{
+    font-family: "fabfelt";
+    src: url("police/fabfeltscript-bold.ttf") format("truetype");
+}
+
+body
+{
+    background-image : url("image/Food.jpg");
+    background-attachment : fixed;
+    background-size : cover; 
+    font-family: fabfelt;
+    color : aliceblue;
+}
+
+div.Window
+{
+    padding-top: 5px;
+    padding-left: 3px;
+    width : 300px;
+    height : 300px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-image : url("image/food1.jpg"); 
+    background-size: cover;
+    box-shadow: 4px 4px 4px darkcyan;
+}
+
+div.Presentation 
+{
+    display : flex;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap; 
+}
+
+#inwin
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+div.item
+{
+    font-size: 25px;
+}
+
+.item:nth-child(1)
+{
+    margin-top: 0px;
+    justify-content: space-around;
+}
+
+.item:nth-child(2)
+{
+    margin-top: 10px;
+    justify-content: space-around;
+    width :100px;
+}
+
+div.description
+{
+    margin-top: 13px;
+    margin-left: auto;
+    margin-right: auto;
+    width : 275px;
+    height : 80px;
+    overflow: scroll;
+}
+
+div.title 
+{
+    position : relative;
+    justify-content: center;
+    align-content: center;
+    width : 130px;
+    height : 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+div.button
+{
+    
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+	display : flex;
+}
+
+#contain
+{ 
+}
+
+.top:nth-child(1)
+{
+    margin-top: 10px;
+    margin-right: 10px;
+    text-align: right;
+}
+
+a
+{
+    border : solid grey 1px;
+    background-color: darkgray;
+    font-family: fabfelt;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.button:nth-child(1)
+{
+	justify-content: space-around;
+}
+
+.button:nth-child(2)
+{
+	justify-content: space-around;
+	margin-left : 10px;
+}
+
+.cart {
+	background-image:url(/Project/Websitefont.jpg);
+	background-attachment:fixed;
+	background-size:cover;
+	text-align: center ;
+}

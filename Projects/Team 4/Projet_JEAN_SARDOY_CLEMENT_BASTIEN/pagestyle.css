@@ -1,0 +1,141 @@
+
+
+.homepage{
+	background-image:url(/Project/Websitefont.jpg);
+	background-attachment:fixed;
+	background-size:cover;
+	text-align: center ;
+}	
+
+.logo{
+	
+	
+	border-style:solid;
+	border : 2px;
+	border-color:red;
+	text-align: center ;
+}
+
+#LoginButtonFirstPage{
+	
+	height:40px;
+    width:180px;
+	background-color:Blue;
+	margin:10px;
+	font-size:25px;
+	border-color:DeepSkyBLue;
+	border-radius:20%;
+	display:inline;
+}
+
+#InscriptionButtonFirstPage{
+	
+	height:40px;
+    width:180px;
+	background-color:Blue;
+	margin:10px;
+	font-size:20px;
+	border-color:DeepSkyBLue;
+	border-radius:20%;
+	display:inline;
+}
+
+.buttons{
+	
+	position:absolute;
+	left:45%;
+	top:45%;
+	
+}
+
+.InscriptionPage{
+	background-image:url(/Project/Websitefont.jpg);
+	background-attachment:fixed;
+	background-size:cover;
+	position:aboslute;
+	text-align:center;
+}
+#ButtonSignUp{
+	height:40px;
+    width:180px;
+	background-color:Blue;
+	margin:10px;
+	font-size:20px;
+	border-color:DeepSkyBLue;
+	border-radius:20%;
+	
+}
+
+#CreateAccountButton{
+	height:22px;
+    width:180px;
+	background-color:Blue;
+	margin:10px;
+	font-size:15px;
+	border-color:DeepSkyBLue;
+	border-radius:20%;
+}
+
+#LeaveInscriptionButton{
+	height:22px;
+    width:180px;
+	background-color:Red;
+	margin:10px;
+	font-size:15px;
+	border-color:DarkRed;
+	border-radius:20%;
+}	
+
+.LoginPage{
+	background-image:url(/Project/Websitefont.jpg);
+	background-attachment:fixed;
+	background-size:cover;
+	position:aboslute;
+	text-align:center;
+	font-size:20px;
+}
+#DontHaveAccount{
+	height:22px;
+    width:180px;
+	background-color:Red;
+	margin:10px;
+	font-size:15px;
+	border-color:DarkRed;
+	border-radius:20%;
+}
+
+#LoginButton{
+	height:22px;
+    width:180px;
+	background-color:Blue;
+	margin:10px;
+	font-size:15px;
+	border-color:DeepSkyBLue;
+	border-radius:20%;
+}
+.SuccessfullLogin{
+	background-image:url(/Project/Websitefont.jpg);
+	background-attachment:fixed;
+	background-size:cover;
+	position:aboslute;
+	text-align:center;
+	font-size:20px;
+}
+
+.SucessfullInscription{
+	background-image:url(/Project/Websitefont.jpg);
+	background-attachment:fixed;
+	background-size:cover;
+	position:aboslute;
+	text-align:center;
+	font-size:20px;
+}
+
+
+	
+	
+	
+	
+	
+	
+	
