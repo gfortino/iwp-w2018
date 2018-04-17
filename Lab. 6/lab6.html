@@ -1,0 +1,54 @@
+<html>
+<head>
+	
+	 <script src="http://code.jquery.com/jquery-1.9.1.js"></script> 
+	 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	<!-- <script type="text/javascript" src="script.js"></script> -->
+	<script>
+		function border(){
+			document.getElementById("id1").style.border="5px solid red";
+		}
+		function Hideborder(){
+			document.getElementById("id1").style.border="none";
+		}
+		function changecontent(){
+			var text = document.getElementById('input1').value;
+			document.getElementById('id1').innerHTML=text;
+		}
+		function changetextcolor(){
+			var color = document.getElementById('color1').value;
+			document.getElementById('id1').style.color=color;
+		}
+		function changebackcolor(){
+			var color = document.getElementById('color2').value;
+			document.getElementById('id1').style.background=color;
+		}
+		function fontsize(){
+			var size = document.getElementById('fontsize1').value;
+			alert(size);
+			document.getElementById('id1').style.fontSize=size;
+		}
+		function changeheight(){
+			var hei = document.getElementById('height1').value;
+			alert(hei);
+			document.getElementById('id1').style.height=hei;
+			document.getElementById('id1').style.width=hei;
+		}
+	</script>
+</head>
+	<body>
+		<form>
+		  Form:<br>
+		  <input type="radio" name="bordername"onchange="border()">Visible<br>
+		  <input type="radio" name="bordername"onchange="Hideborder()">Invisible<br>
+		  <input type="text" id = "input1" name = "changecontent2" onchange = "changecontent()">Changecontent<br>
+		  <input type="color" id = "color1" name = "changetextcolor2" onchange = "changetextcolor()">Changecolor<br>
+		  <input type="color" id = "color2" name = "changebackcolor3" onchange = "changebackcolor()">Changebackcolor<br>
+		  <input type="number" id = "fontsize1" name = "font1" onchange = "fontsize()">ChangeFontSize<br>
+		  <input type="number" id = "height1" name = "heightname" onchange = "changeheight()">H&W<br>
+		</form>
+		<div id = "id1">
+			Test
+		</div>
+	</body>
+<html>
