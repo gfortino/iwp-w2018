@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title>Beauty Shop</title>
+		<meta charset = "utf-8">
+		<meta name="viewreport" content="width=device-width, initial-scale=1.0">
+		<link rel = "stylesheet" href = "indexbckg.css">
+			
+			<div class ="pres1">
+				<div class = "pres2">
+					<h1>Beauty Store</h1>
+				</div>
+			</div>
+			
+			<nav>
+					<div class="table"> 
+						<ul>
+							<li class="sgn">
+								<a href="formSignIn.php">Log in</a>
+							</li>
+							<li class="sub">
+								<a href="formUser.php">Sign in</a>
+							</li>
+						</ul>
+					</div>
+			</nav>
+	</head>
+	<body>
+		
+	</body>
+	
+</html>

@@ -1,0 +1,30 @@
+<?php
+    // INCLUDE
+    include("connexion_bd.php");
+    
+    //session_start();
+
+    if (!empty($_POST["pseudoUser"]) && (!empty($_POST["passwordUser"]))) 
+    {
+        $id = $_POST["pseudoUser"];
+        $mdp = md5($_POST["passwordUser"]);
+        
+        $co = connexion(); 
+        $requete="SELECT pseudo, mdp FROM user WHERE pseudo='".$id."' AND mdp='".$mdp."'";
+        $check = mysqli_query($co, $requete);
+        $test = mysqli_num_rows($check);
+
+			
+    	//si existe et mdp OK
+        if ($test != 0)
+        {
+            header("Location:logInConf.php");
+        }else {
+            echo "Erreur de connexion ! ".$mdp;
+        }
+        
+    }else {
+			echo "VIDE";    
+    }
+
+?>
