@@ -1,0 +1,45 @@
+table{
+	width: 50%;
+	margin: auto;
+}
+
+table, th, td{
+	border: 1px solid black;
+}
+
+.lightBlue {
+	background-color: #ade0ff;
+}
+
+.darkBlue {
+	background-color: #24477f;
+	color: white;
+}
+
+
+/*Question 2*/
+div{
+	border: 1px solid black;
+	width:50%;
+	display:block;
+	margin: 2px;
+}
+
+.center{
+	margin: auto;
+	display:block;
+}
+
+#image{
+	height:300px;
+	width:300px;
+	background-image: url(AsusRog.jpg);
+	background-size: 100%;
+	display: inline-block;
+}
+
+#info{
+	display:inline-block;
+	vertical-align:top;
+	margin: auto;
+}
