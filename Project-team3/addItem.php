@@ -1,0 +1,41 @@
+<?php
+    // INCLUDE
+    include("connexion_bd.php");
+    
+    //session_start();      
+        $bsCont = new beautyShopController();
+			
+		$name = $_POST['nameItem'];
+		$code = $_POST['codeItem'];
+		$image = $_POST['imageItem'];
+		$price =  $_POST['priceItem'];
+		$type =  $_POST['typeItem'];
+		
+		$check="SELECT name, code, image FROM item WHERE name = '".$name."' AND code = '".$code."' AND image = '".$image."'  ";
+       $test = $bsCont->numRows($check);
+		if($test >= 1) {
+    		//echo "item already exists<br/>".$test;
+    				?>
+    			<script language="JavaScript">
+        				alert("Error ! item already exists.");
+        				window.location.replace("admiSession.php");
+    			</script>
+    			<?php
+    		
+    		
+		}else {
+			$item = "INSERT INTO item (name, code,image,price, type) VALUES ('$name', '$code', '$image', '$price', '$type')"; 	
+			$result = $bsCont->queryFunc($item);
+			?>
+    			<script language="JavaScript">
+        				alert("Item added.");
+        				window.location.replace("adminSession.php");
+    			</script>
+    <?php
+		}
+		
+	
+			
+		
+			
+?>
