@@ -1,0 +1,14 @@
+1.
+Create a file by putting your name in it
+Read the newly created file's content and print it to screen
+
+2.
+Print this project directory's file listing to screen.
+If you find a directory, enter it recursively.
+Using a function can be useful for recursion.
+
+3.
+Find regular expression online to match any e-mail address.
+Use it to validate an array of 5 strings.
+Make 3 of these 5 strings invalid email adresses (e.g. missing TLD, missing @, illegal characters, etc...)
+
