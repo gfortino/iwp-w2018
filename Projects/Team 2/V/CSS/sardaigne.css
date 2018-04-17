@@ -1,0 +1,190 @@
+/*
+[class*="col-"]{
+	border:2px solid green;
+}
+.row{
+	border:2px solid blue;
+	
+}
+
+.container{
+	border:2px solid purple;
+}*/
+
+.thumbnail{
+	padding:20px;
+}
+.thumbnail p{
+	text-align: justify;
+    text-justify: inter-word;
+	margin:15px;
+	line-height: auto;
+	font-size:15px;
+}
+
+#logo{
+	width:100px;
+	height:100px;
+	display:block;
+	margin:auto;
+}
+
+.citation{
+	height:10%;
+}
+
+.info{
+	background-color: #ff7a00;
+	color: #FFFFFF;
+	padding:15px;
+	border-radius:1em 0em 1em 0em;
+}
+
+.parallaxSardaigne{
+	 /* The image used */
+   background:url(../images/Sardaigne/Croisiere-voilier-Corse-La-Madalenna.jpg);
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	padding:10% 0;
+}
+
+.parallaxFjord{
+	 /* The image used */
+   background:url(../images/Norvege/Sognefjord-Norway-Village.jpg);
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	padding:10% 0;
+}
+
+.parallaxDanube{
+	 /* The image used */
+   background:url(../images/Danube/Austria_Lake_Mountains_464946.jpg);
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	padding:10% 0;
+}
+
+.parallaxNil{
+	 /* The image used */
+   background:url(../images/Egypte/B_1_philae1.jpg);
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	padding:10% 0;
+}
+
+.parallaxGeorge{
+	 /* The image used */
+   background:url(../images/georgesV.jpg);
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	padding:10% 0;
+}
+
+.parallaxPlaza{
+	 /* The image used */
+   background:url(../images/Plaza/facade.jpg);
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	padding:10% 0;
+}
+
+.parallaxFjord h1, .parallaxNil h1, .parallaxDanube h1, .parallaxSardaigne h1, .parallaxGeorge h1, .parallaxPlaza h1{
+    font-family: 'Crete Round', serif;
+    font-size:45px;
+	color:white;
+	font-style:bold;
+	text-align:center;
+}
+
+@media only screen and (max-device-width:640px), only screen and (max-width:640px) {
+  .parallaxFjord{
+	 /* The image used */
+   background:url(../images/Norvege/Sognefjord-Norway-Village.jpg); /*Norway-Lofoten-archipelago-village-island-fjord-mountains-snow-dusk-lights_1920x1200*/
+
+    /* Set a specific height */
+    min-height: 250px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	padding:10% 0;
+}
+.parallaxDanube{
+	 /* The image used */
+   background:url(../images/Danube/Austria_Lake_Mountains_464946.jpg);
+
+    /* Set a specific height */
+    min-height: 250px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	padding:10% 0;
+}
+
+.parallaxNil{
+	 /* The image used */
+   background:url(../images/Egypte/B_1_philae1.jpg);
+
+    /* Set a specific height */
+    min-height: 250px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 1000px;
+	padding:10% 0;
+}
+
+.row h1, .row h2, .row h3, .row h4{
+	text-align:center;
+}
+}
+

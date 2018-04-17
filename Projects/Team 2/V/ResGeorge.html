@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+	<link href="V/CSS/ResGeorge.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel="stylesheet">
+	<script type="text/javascript" language="javascript">
+		$(document).scroll(function() {
+			var y = $(document).scrollTop(),
+			header = $("#menuPetit");
+			if(y >= 105.5)  {
+				header.css({position: "fixed", "top" : "0", "left" : "0"});
+				document.getElementById("menuPetit").style.marginTop = "0px";
+			} else {
+			header.css("position", "relative");
+			document.getElementById("menuPetit").style.marginTop = "15px";
+			}
+		});
+
+		function isValid(){
+			var doc = document.getElementById("f1");
+			var dbeg = document.getElementById("datedeb");
+			var dend = document.getElementById("datefin");
+			var valid = true;
+			if(doc.value<1 || doc.value==""){
+				doc.style.borderColor="red";
+				document.getElementById("submit").style.display="none";
+				valid = false;
+			}
+			else{
+				doc.style.borderColor="#02b8dd";
+			}
+			if(dbeg.value=="jj/mm/aaaa" || dbeg.value==""){
+				dbeg.style.borderColor="red";
+				document.getElementById("submit").style.display="none";
+				valid = false;
+			}
+			else{
+				dbeg.style.borderColor="#02b8dd";
+			}
+			if(dend.value=="jj/mm/aaaa" || dend.value==""){
+				dend.style.borderColor="red";
+				document.getElementById("submit").style.display="none";
+				valid = false;
+			}
+			else{
+				dend.style.borderColor="#02b8dd";
+			}
+			if(valid){
+				document.getElementById("submit").style.display="block";
+			}
+		}
+	</script>
+		<title>Bon Voyage - Agence de Voyages en ligne</title>
+
+	</head>
+
+	<body>
+		<?php require("menu.html"); ?>
+        </header>
+
+
+		<section class="container">
+			<form method="post" action="index.php?controle=userController&action=reserve">
+				<div class = "row">
+					<div class="col-md-6 col-lg-6 col-sm-8 col-xs-12">
+						<?php
+						if(isset($_SESSION['travelPicture']))
+							echo('<img src = "' . $_SESSION['travelPicture'] . '" class="img-responsive"/>');
+						else
+							echo('<img src = "V/images/georgesV.jpg" class="img-responsive"/>');
+						?>
+					</div>
+					<div class="col-md-6 col-lg-6 col-sm-4 col-xs-12"id ="desc" >
+						<?php
+						if(isset($_SESSION['currentTravel']))
+							echo('<ul><h3>Reservation ' . $_SESSION['currentTravel'] . '</h3></ul>');
+						else
+							echo('<ul><h3>Reservation Hôtel George V</h3></ul>');
+						?>
+						Nombre de chambres<input type="number" value="" id="f1" name = "nbroom" onblur="isValid()">
+						Date Deb<input type="date" id="datedeb" name="datebeg" onblur="isValid()">
+						Date end<input type="date" id="datefin" name="dateend" onblur="isValid()">
+						<div class="col-lg-2 col-lg-offset-5 col-md-2 col-md-offset-5 col-sm-2 col-sm-offset-5 col-xs-6 col-xs-offset-3" id = "bouton">
+							<input id="submit" class="form-control" type="submit" value="Réserver" onclick="alert('Your reservation has been sent')">
+						</div>
+							<!--<li>Prix : 1200/nuit</li>
+							<li id="ligne">Adresse : 31 Av George V | 8th Arr., 75008 Paris, France (Champs-Élysées)</li>
+							</ul>-->
+					</div>
+				</div>
+			</form>
+		</section>
+		<footer>
+            <div class="wrapper">
+                <h1 class="col-md-12 col-lg-12 col-sm-12 col-xs-12"> Bon Voyage<span class="orange">.</span></h1>
+
+                <div class="copyright" class="col-md-8 col-lg-8 col-sm-12 col-xs-12">Copyright © 2017. Tous droits réservés.
+                </div>
+            </div>
+        </footer>
+	</body>
+</html>

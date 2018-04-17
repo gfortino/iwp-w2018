@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="V/CSS/bootstrap.min.css">
+	<link href="V/CSS/styles.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Crete+Round' rel="stylesheet">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" language="javascript">
+	$(document).scroll(function() {
+		var y = $(document).scrollTop(),
+		header = $("#menuPetit");
+		if(y >= 110.5)  { //height de #logo + margin-top de#menuPetit
+			header.css({position: "fixed", "top" : "0", "left" : "0"});
+			document.getElementById("menuPetit").style.marginTop = "0px";
+		} else {
+			header.css("position", "relative");
+			document.getElementById("menuPetit").style.marginTop = "15px";
+		}
+	});
+	</script>
+	<style>
+	.carousel-inner > .item > img,
+	.carousel-inner > .item > a > img {
+		width: 100%;
+		height: 600px;
+		margin: auto;
+	}
+
+	@media only screen and (max-device-width:640px), only screen and (max-width:640px) {
+		.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+			width: 100%;
+			height: 400px;
+			margin: auto;
+		}
+	}
+
+	#myCarousel {
+		width: 100%;
+	}
+	</style>
+	<style>
+	* {
+		-webkit-transition: all 0.5s ease-in-out;
+		-moz-transition: all 0.5s ease-in-out;
+		-ms-transition: all 0.5s ease-in-out;
+		-o-transition: all 0.5s ease-in-out;
+		transition: all 0.5s ease-in-out;
+	}
+
+
+	#map path {
+		opacity:0.8;
+		fill:grey;
+		stroke:#FFFFFF;
+		stroke-width:0.6;
+		transition: fill 0.2s, stroke 0.3s;
+		transform-origin:center center;
+	}
+
+	#map path.dispo {
+		fill:green;
+		stroke:#FFFFFF;
+		stroke-width:0.6;
+		transition: fill 0.2s, stroke 0.3s;
+	}
+
+	#map path.dispo:hover {
+		fill:blue;
+		stroke:#FFFFFF;
+		stroke-width:0.6;
+		transition: fill 0.2s, stroke 0.3s;
+	}
+
+	#map path:hover {
+		opacity:10;
+		fill:red;
+		stroke: black;
+	}
+
+
+	#menuPetit{
+		margin-top:15px;
+	}
+	</style>
+
+
+	<script>
+	function isRegisterValid(){
+		var valid = true;
+		if( !isLastnameValid() || !isFirstnameValid() || !isLoginValid() || !isEmailValid() || !isPasswordValid() || !isSecondPasswordValid() ){
+			document.getElementById("submit").style.display="none";
+			valid = false;
+		}
+		if(valid==true){
+			document.getElementById("submit").style.display="block";
+		}else {
+			document.getElementById("submit").style.display="none";
+		}
+	}
+	function isLastnameValid(){
+		var Lastname = document.getElementById("Lastname");
+		if(Lastname.value==""){
+			Lastname.style.borderColor="red";
+
+			return false;
+		}
+		Lastname.style.borderColor="#02b8dd";
+		return true;
+	}
+	function isFirstnameValid(){
+		var Firstname = document.getElementById("Firstname");
+		if(Firstname.value==""){
+			Firstname.style.borderColor="red";
+			return false;
+		}
+		Firstname.style.borderColor="#02b8dd";
+		return true;
+	}
+	function isLoginValid(){
+		var login = document.getElementById("login");
+		if(login.value==""){
+			login.style.borderColor="red";
+			return false;
+		}
+		login.style.borderColor="#02b8dd";
+		return true;
+	}
+	function isEmailValid(){
+		var email = document.getElementById("email");
+		if(email.value==""){
+			email.style.borderColor="red";
+			return false;
+		}
+		email.style.borderColor="#02b8dd";
+		return true;
+	}
+	function isPasswordValid(){
+		var password = document.getElementById("password");
+		if(password.value==""){
+			password.style.borderColor="red";
+			return false;
+		}
+		password.style.borderColor="#02b8dd";
+		return true;
+	}
+	function isSecondPasswordValid(){
+		var password = document.getElementById("id_validatePassword");
+		if(password.value==""){
+			password.style.borderColor="red";
+			return false;
+		}
+		password.style.borderColor="#02b8dd";
+		return true;
+	}
+
+
+</script>
+<title>Bon Voyage - Agence de Voyages en ligne</title>
+</head>
+
+<body>
+	<?php require("menu.html"); ?>
+
+	<section class="container-fluid contact">
+		<form method="post" action="index.php?controle=userController&action=register">
+			<div class="col-ld-12 col-md-12 col-ms-12 col-xs-12">
+				<input type="text" name="Lastname" id="Lastname" placeholder="LastName" onblur="isRegisterValid()">
+				<input type="text" name="Firstname" id="Firstname" placeholder="FirstName"  onblur="isRegisterValid()">
+				<input type="email" name="email" id="email" placeholder="Email" onblur="isRegisterValid()">
+				<input type="login" name="login" id="login" placeholder="log"  onblur="isRegisterValid()">
+				<input type="password" name="password" id="password" placeholder="Password" onblur="isRegisterValid()" >
+				<input type="password" name="validatePassword" id="id_validatePassword" placeholder="Validate Password"onblur="isRegisterValid()"  >
+			</div>
+	<div class="col-ld-12 col-md-12 col-ms-12 col-xs-12">
+		<input id ="submit" type="submit" class="button-3" value="Submit">
+	</div>
+</form>
+</section>
+
+<footer>
+	<div class="wrapper">
+		<h1> Bon Voyage<span class="orange">.</span></h1>
+
+		<div class="copyright">Copyright © 2016. Tous droits réservés.
+		</div>
+	</div>
+</footer>
+</body>
+
+</html>

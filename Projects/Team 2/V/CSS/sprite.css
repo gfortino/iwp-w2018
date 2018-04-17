@@ -1,0 +1,47 @@
+.icone{
+	margin:10px 0 10px 0;
+	padding-left:15%;
+}
+
+@media only screen and (max-device-width:640px), only screen and (max-width:640px) {
+	.icone{
+	padding-left:30%;
+}
+}
+
+.icone li{
+	width: 50px;
+    height: 50px;
+    display: inline-block;
+    background: url('../images/sprite_thumb_transport.png') no-repeat;
+}
+
+.icone .icone-1 { background-position: left top; transition:0.5s; padding-top:50px;}
+
+.icone .icone-2 { background-position: 33.33% top; transition:0.5s; }
+
+.icone .icone-3 { background-position: 66.66% top; transition:0.5s; }
+
+.icone .icone-4 { background-position: right top; transition:0.5s; }
+
+.icone .icone-1:hover { background-position: left bottom; transition:0.5s; }
+
+.icone .icone-2:hover { background-position: 33.33% bottom; transition:0.5s; }
+
+.icone .icone-3:hover { background-position: 66.66% bottom; transition:0.5s; }
+
+.icone .icone-4:hover { background-position: right bottom; transition:0.5s; }
+
+.icone .icone-1:hover .showMore {display:inline; position: left top; border:1px solid black;}
+
+.showMore {display:none; width:300px;}
+
+/*
+.icone .icone-1 { background-position: left top; }
+
+.icone .icone-2 { background-position: -50px top; }
+
+.icone .icone-3 { background-position: -100px top; }
+
+.icone .icone-4 { background-position: -150px top; }
+*/

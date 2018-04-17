@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="V/CSS/hotelsParis.css" rel="stylesheet">
+	<link href="V/CSS/header.css" rel="stylesheet">
+	<link href="V/CSS/styles.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" language="javascript">
+		$(document).scroll(function() {
+			var y = $(document).scrollTop(),
+			header = $("#menuPetit");
+			if(y >= 110.5)  { //height de #logo + margin-top de#menuPetit
+				header.css({position: "fixed", "top" : "0", "left" : "0"});
+				document.getElementById("menuPetit").style.marginTop = "0px";
+			} else {
+			header.css("position", "relative");
+			document.getElementById("menuPetit").style.marginTop = "15px";
+			}
+		});
+		</script>
+    <title>Bon Voyage - Online travel agency</title>
+</head>
+    
+    <body>
+	<?php require("menu.html"); ?>
+        
+		<section id = "container">
+			<h3>Choose your hotel</h3>
+			
+			</section>
+				<div id = "images" class="row">
+					<a href = "index.php?controle=userController&action=displayPage&country=hotelsParis" class="col-md-6 col-lg-6 col-sm-12 col-xs-12"><img src="V/images/paris-image_121136222_125.jpg" class="img-responsive">
+					<div class="caption">
+						<p>Paris hotels</p>
+					</div>
+					</a>
+					
+					<a href = "index.php?controle=userController&action=displayPage&country=hotelsSidney" class="col-md-6 col-lg-6 col-sm-12 col-xs-12"><img src="V/images/sydney-wallpaper-2216-2374-hd-wallpapers.jpg" class="img-responsive" >
+					<div class="caption">
+						<p>Sydney hotels</p>
+					</div>
+					</a>
+					<!-- index.php?controle=userController&action=displayPage&country=Saigon -->
+					<a href = "#" class="col-md-6 col-lg-6 col-sm-12 col-xs-12"><img src="V/images/499324.jpg" class="img-responsive" >
+					<div class="caption">
+						<p>HoChiMinh hotels</p>
+					</div>
+					</a>
+				</div>
+			</section>
+		
+        
+        <footer>
+            <div class="wrapper"> 
+                <h1> Bon Voyage<span class="orange">.</span></h1>
+                
+                <div class="copyright">Copyright © 2016. Tous droits réservés.
+                </div>
+            </div>
+        </footer>
+    </body>
+          
+</html>

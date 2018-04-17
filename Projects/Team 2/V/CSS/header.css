@@ -1,0 +1,80 @@
+#logo{
+	width:100px;
+	height:100px;
+	display:block;
+	margin:auto;
+}
+
+header {
+    min-height: 70px;
+}
+
+header h1, #titre {
+	font-family: 'Crete Round', serif;
+    font-size:45px;
+	color:#444;
+    float:left;
+    margin-top: 32px;
+}
+
+header nav, #menu {
+    float: right;
+    margin-top: 50px;
+}
+
+header nav ul li, #menu ul li{
+    float:left;
+    display: inline-block;
+}
+
+header nav ul li a, #menu ul li a{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: 20px;
+    font-size: 12.5px;
+	
+	text-decoration: none;
+    color:#444;
+    
+}
+
+header nav ul li a:hover, #menu ul li a:hover{
+    color: #ff7a00;
+}
+
+/* AJOUT ALEXANDRE */
+@media screen and (max-width: 991px) {
+
+	header h1 {
+		float:none;
+		text-align:center;
+	}
+	
+	header nav {
+		text-align:center;
+	}
+	
+	header nav ul li{
+		display: inline-block;
+		float:none;
+	}
+	
+	header nav ul li a {
+		display:inline;
+	}
+
+	.new{
+		float:none;
+	}
+	
+}
+
+	#menuPetit{
+		margin-top:15px;
+		z-index:1;
+	}
+	
+	#listePetite{
+		width:100%;
+		text-align:center;
+	}

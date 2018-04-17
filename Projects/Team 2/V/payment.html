@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="V/CSS/bootstrap.min.css">
+		<link href="V/CSS/styles.css" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Crete+Round' rel="stylesheet">
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script type="text/javascript" language="javascript">
+			$(document).scroll(function() {
+				var y = $(document).scrollTop(),
+				header = $("#menuPetit");
+				if(y >= 110.5)  { //height de #logo + margin-top de#menuPetit
+					header.css({position: "fixed", "top" : "0", "left" : "0"});
+					document.getElementById("menuPetit").style.marginTop = "0px";
+				} else {
+					header.css("position", "relative");
+					document.getElementById("menuPetit").style.marginTop = "15px";
+				}
+			});
+			
+			function validName(){
+				var a = document.getElementById("name");
+				if(a.innerHTML==""){
+					a.css({boderColor: "red"});
+				}
+			}
+		</script>
+		
+		<script type="text/javascript">
+			var specialKeys = new Array();
+			specialKeys.push(8); //Backspace
+			function IsNumeric(e) {
+				var keyCode = e.which ? e.which : e.keyCode
+				var ret = ((keyCode >= 48 && keyCode <= 57) || specialKeys.indexOf(keyCode) != -1);
+				document.getElementById("error").style.display = ret ? "none" : "inline";
+				return ret;
+			}
+		</script>
+		
+		<style>
+			.carousel-inner > .item > img,
+			.carousel-inner > .item > a > img {
+				width: 100%;
+				height: 600px;
+				margin: auto;
+			}
+
+			@media only screen and (max-device-width:640px), only screen and (max-width:640px) {
+				.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+					width: 100%;
+					height: 400px;
+					margin: auto;
+				}
+			}
+
+			#myCarousel {
+				width: 100%;
+			}
+		</style>
+		<style>
+			* {
+				-webkit-transition: all 0.5s ease-in-out;
+				-moz-transition: all 0.5s ease-in-out;
+				-ms-transition: all 0.5s ease-in-out;
+				-o-transition: all 0.5s ease-in-out;
+				transition: all 0.5s ease-in-out;
+			}
+
+
+			#map path {
+				opacity:0.8;
+				fill:grey;
+				stroke:#FFFFFF;
+				stroke-width:0.6;
+				transition: fill 0.2s, stroke 0.3s;
+				transform-origin:center center;
+			}
+
+			#map path.dispo {
+				fill:green;
+				stroke:#FFFFFF;
+				stroke-width:0.6;
+				transition: fill 0.2s, stroke 0.3s;
+			}
+
+			#map path.dispo:hover {
+				fill:blue;
+				stroke:#FFFFFF;
+				stroke-width:0.6;
+				transition: fill 0.2s, stroke 0.3s;
+			}
+
+			#map path:hover {
+				opacity:10;
+				fill:red;
+				stroke: black;
+			}
+
+
+			#menuPetit{
+				margin-top:15px;
+			}
+		</style>
+
+		<title>Bon Voyage - Agence de Voyages en ligne</title>
+	</head>
+
+	<body>
+		<?php require("menu.html"); ?>
+
+		<section class="container-fluid contact">
+			<form method="post" action="index.php?controle=userController&action=accueil">
+				<div class="col-ld-12 col-md-12 col-ms-12 col-xs-12">
+
+					<input name="credit-number" id="text1" onkeypress="return IsNumeric(event)" type="text" maxlength="19" placeholder="Card Number" ondrop="return false;" onpaste="return false;">
+					<input name="credit-expires" id="text2" onkeypress="return IsNumeric(event)" type="text" maxlength="4" placeholder="MMYY" ondrop="return false;" onpaste="return false;">
+					<input name="credit-cvc" id="text3" onkeypress="return IsNumeric(event)" type="text" maxlength="4" placeholder="CVC" ondrop="return false;" onpaste="return false;">
+					<span id="error" style="color: Red; display: none">* Input digits (0 - 9)</span>
+				</div>
+				<div class="col-ld-12 col-md-12 col-ms-12 col-xs-12">
+					<input type="submit" class="button-3" value="Pay">
+				</div>
+			</form>	
+		</section>
+
+		<footer>
+			<div class="wrapper"> 
+				<h1> Bon Voyage<span class="orange">.</span></h1>
+
+				<div class="copyright">Copyright © 2016. Tous droits réservés.
+				</div>
+			</div>
+		</footer>
+	</body>
+
+</html>
