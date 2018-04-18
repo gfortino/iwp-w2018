@@ -1,0 +1,34 @@
+<?php
+
+	include("connexion_bd.php");
+	
+	
+    function &getItems()
+    {
+    	$co = connexion();
+    	$getinfo = "SELECT idItem, nameItem,description, brandItem, price,type FROM item";
+		$query = mysqli_query($co, $getinfo);
+		
+
+		
+    	$allItem = array();
+
+
+		while ($row = mysqli_fetch_array($query)) {
+    		
+       $allItem[] = array(
+        	"idItem" => $row['idItem'], 
+        	"nameItem" => $row['nameItem'],
+        	"description" => $row['description'],
+        	"brandItem" => $row['brandItem'],
+        	"price" => $row['price'],
+        	"type" => $row['type']
+
+		 );
+		
+    	}
+    	 return $allItem;
+
+    }
+                            
+?>
