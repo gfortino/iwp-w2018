@@ -1,0 +1,58 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="V/CSS/bootstrap.min.css">
+		<link href="V/CSS/hotelsParis.css" rel="stylesheet">
+		<link href="V/CSS/styles.css" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Crete+Round' rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script type="text/javascript" language="javascript">
+		$(document).scroll(function() {
+			var y = $(document).scrollTop(),
+			header = $("#menuPetit");
+			if(y >= 110.5)  { //height de #logo + margin-top de#menuPetit
+				header.css({position: "fixed", "top" : "0", "left" : "0"});
+				document.getElementById("menuPetit").style.marginTop = "0px";
+			} else {
+			header.css("position", "relative");
+			document.getElementById("menuPetit").style.marginTop = "15px";
+			}
+		});
+		</script>
+		<title>Bon Voyage - Travel Agency Online</title>
+	</head>
+
+	<body>
+		<?php require("menu.html"); ?>
+       
+		<section id = "container">
+			<h3>Choose your cruise</h3>
+				
+			</section>
+				<div id = "images" class="row">
+					<a href = "index.php?controle=userController&action=displayCountry&country=To conquer the East" class="col-md-6 col-lg-6 col-sm-12 col-xs-12"><img src="V/images/Danube/58232cb2-1d23-42a2-a5e5-ca5138800ff4.jpg" class="img-responsive">
+					<div class="caption">
+						<p>To conquer the East</p>
+					</div>
+					</a>
+					
+					<a href = "index.php?controle=userController&action=displayCountry&country=The domain of the pharaohs" class="col-md-6 col-lg-6 col-sm-12 col-xs-12"><img src="V/images/Egypte/578.jpg" class="img-responsive" >
+					<div class="caption">
+						<p>The domain of the pharaohs</p>
+					</div>
+					</a>
+				</div>
+			</section>
+		
+		<footer>
+            <div class="wrapper"> 
+                <h1> Bon Voyage<span class="orange">.</span></h1>
+                
+                <div class="copyright">Copyright © 2016. Tous droits réservés.
+                </div>
+            </div>
+        </footer>
+	</body>
+</html>

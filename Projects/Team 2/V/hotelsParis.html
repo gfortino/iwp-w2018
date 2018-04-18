@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href="V/CSS/header.css" rel="stylesheet">
+	<link href="V/CSS/hotelsParis.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel="stylesheet">
+	<script type="text/javascript" language="javascript">
+		$(document).scroll(function() {
+			var y = $(document).scrollTop(),
+			header = $("#menuPetit");
+			if(y >= 110.5)  { //height de #logo + margin-top de#menuPetit
+				header.css({position: "fixed", "top" : "0", "left" : "0"});
+				document.getElementById("menuPetit").style.marginTop = "0px";
+			} else {
+			header.css("position", "relative");
+			document.getElementById("menuPetit").style.marginTop = "15px";
+			}
+		});
+		</script>
+    <title>Bon Voyage - Online travel agency</title>
+</head>
+    
+    <body>
+		<?php require("menu.html"); ?>
+
+		<section id = "container">
+			<h3>Choose your hotel</h3>
+				
+			</section>
+				<div id = "images" class="row">
+					<a href = "index.php?controle=userController&action=displayCountry&country=Le plaza athenee" class="col-md-6 col-lg-6 col-sm-12 col-xs-12"><img src="V/images/plaza1.jpg" class="img-responsive">
+					<div class="caption">
+						<p>Le Plaza Athénée</p>
+					</div>
+					</a>
+					
+					<a href = "index.php?controle=userController&action=displaycountry&country=Le George V" class="col-md-6 col-lg-6 col-sm-12 col-xs-12"><img src="V/images/george.jpg" class="img-responsive" >
+					<div class="caption">
+						<p>Le George V</p>
+					</div>
+					</a>
+				</div>
+			</section>
+		
+        
+        <footer>
+            <div class="wrapper"> 
+                <h1 class="col-md-12 col-lg-12 col-sm-12 col-xs-12"> Bon Voyage<span class="orange">.</span></h1>
+                
+                <div class="copyright" class="col-md-8 col-lg-8 col-sm-12 col-xs-12">Copyright © 2017. Tous droits réservés.
+                </div>
+            </div>
+        </footer>
+    </body>
+          
+</html>
