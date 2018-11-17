@@ -93,7 +93,40 @@ function reserve(){
 	reserveBDD($id_user,$id_travel,$datebeg,$dateend);
 
 
+	//require("V/payment.html");
+	require("V/ResGeorge_confirmation.html");
+}
+
+function confirme(){
+	require("M/user.php");
+	//echo("reservation en cours");
+	//var_dump( $_SESSION);
+	/*$id_user = $_SESSION['user'];
+	$id_travel=$_SESSION['id_travel'];
+	$datebeg =$_POST['datebeg'];
+	$dateend = $_POST['dateend'];;
+
+	reserveBDD($id_user,$id_travel,$datebeg,$dateend);*/
+
+
 	require("V/payment.html");
+	//require("V/ResGeorge_confirmation.html");
+}
+
+function payment(){
+	require("M/user.php");
+	//echo("reservation en cours");
+	//var_dump( $_SESSION);
+	/*$id_user = $_SESSION['user'];
+	$id_travel=$_SESSION['id_travel'];
+	$datebeg =$_POST['datebeg'];
+	$dateend = $_POST['dateend'];;
+
+	reserveBDD($id_user,$id_travel,$datebeg,$dateend);*/
+
+
+	require("V/accueil.html");
+	//require("V/ResGeorge_confirmation.html");
 }
 
 function getReservation(){

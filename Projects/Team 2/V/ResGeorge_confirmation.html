@@ -65,7 +65,7 @@
 
 
 		<section class="container">
-			<form method="post" action="index.php?controle=userController&action=reserve">
+			<form method="post" action="index.php?controle=userController&action=confirme">
 				<div class = "row">
 					<div class="col-md-6 col-lg-6 col-sm-8 col-xs-12">
 						<?php
@@ -76,18 +76,19 @@
 						?>
 					</div>
 					<div class="col-md-6 col-lg-6 col-sm-4 col-xs-12"id ="desc" >
+						<ul><h3>Please verify your information before validate your reservation</h3></ul>
 						<?php
-						if(isset($_SESSION['currentTravel']))
+						/*if(isset($_SESSION['currentTravel']))
 							echo('<ul><h3>Reservation ' . $_SESSION['currentTravel'] . '</h3></ul>');
 						else
-							echo('<ul><h3>Reservation Hôtel George V</h3></ul>');
+							echo('<ul><h3>Reservation Hôtel George V</h3></ul>');*/
 						?>
-						Nombre de chambres<input type="number" value="" id="f1" name = "nbroom" onblur="isValid()">
-						Date Deb<input type="date" id="datedeb" name="datebeg" onblur="isValid()">
-						Date end<input type="date" id="datefin" name="dateend" onblur="isValid()">
-						<label><input type="checkbox" id="annulation" name="annulation" onblur="isValid()"> Add an annulation warranty</label>
-						<label><input type="checkbox" id="rappatriation" name="rappatriation" onblur="isValid()"> Add an assurance for rappatriation</label>
-						<label><input type="checkbox" id="acceptance" name="acceptance" onblur="isValid()"> I've read and accept the <a>terms of the contract</a></label>
+						Nombre de chambres<input disabled="disabled" type="number" value="" id="f1" name = "nbroom" onblur="isValid()">
+						Date Deb<input disabled="disabled" type="date" id="datedeb" name="datebeg" onblur="isValid()">
+						Date end<input disabled="disabled" type="date" id="datefin" name="dateend" onblur="isValid()">
+						<input disabled="disabled" type="checkbox" id="annulation" name="annulation" onblur="isValid()"> Add an annulation warranty<br>
+						<input disabled="disabled" type="checkbox" id="rappatriation" name="rappatriation" onblur="isValid()"> Add an assurance for rappatriation<br>
+						<input disabled="disabled" type="checkbox" id="acceptance" name="acceptance" onblur="isValid()"> I've read and accept the <a>terms of the contract</a><br>
 						<div class="col-lg-2 col-lg-offset-5 col-md-2 col-md-offset-5 col-sm-2 col-sm-offset-5 col-xs-6 col-xs-offset-3" id = "bouton">
 							<input id="submit" class="form-control" type="submit" value="Réserver" onclick="alert('Your reservation has been sent')">
 						</div>
